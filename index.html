@@ -1,144 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marco</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
+  <noscript>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" type="text/css" />
+  </noscript>
 
-    <!-- Styleshits -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#project">PROJECTS</a></li>
-        <li><a href="#fin">ABOUT</a></li>
-      </ul>
-    </nav>
+  <!-- Styleshits -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <!-- Home -->
-    <main>
-      <!-- img and info container -->
-      <div class="img-info-container">
-        <!-- pfp -->
-        <div class="img-container">
-          <img src="./asset/img/Watashi.jpeg" alt="pfp" />
-        </div>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#top">HOME</a></li>
+      <li><a href="#project">PROJECTS</a></li>
+      <li><a href="#fin">ABOUT</a></li>
+    </ul>
+  </nav>
 
-        <!-- info -->
-        <div class="info-container">
-          <!-- svg container -->
+  <!-- Home -->
+  <main>
+    <!-- img and info container -->
+    <div class="img-info-container">
 
-         
-          <div class="social-container">
-            <!-- GITHUB -->
-            <a href="https://github.com/notshanxx" target="_blank"
-              ><img src="./asset/svg/github.svg" alt="github"
-            /></a>
-
-            <!-- LINKEDIN -->
-            <a
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-              target="_blank"
-              ><img src="./asset/svg/linkedin.svg" alt="linkedin"
-            /></a>
-          </div>
-          <!-- name -->
-          <h1>MARCO</h1>
-          <hr />
-        </div>
+      <!-- pfp -->
+      <div class="img-container">
+        <img src="./asset/img/Watashi.jpeg" alt="pfp" />
       </div>
 
-      <p class="user-bio">
-        I’m a Student currently pursuing my bachelor's degree in Computer
-        Science. <br> I’m passionate about developing products that make people's
-        lives easier and miserable.
-        <!-- <br />
+      <!-- info -->
+      <div class="info-container">
+        <!-- svg container -->
+
+        <div class="social-container">
+          <!-- GITHUB -->
+          <a href="https://github.com/notshanxx" target="_blank"><img src="./asset/svg/github.svg" alt="github" /></a>
+
+          <!-- LINKEDIN -->
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img
+              src="./asset/svg/linkedin.svg" alt="linkedin" /></a>
+        </div>
+
+        <!-- name -->
+        <h1>MARCO</h1>
+        <hr />
+      </div>
+    </div>
+
+    <p class="user-bio">
+      I’m a Student currently pursuing my bachelor's degree in Computer
+      Science. <br> I’m passionate about developing products that make people's
+      lives easier and miserable.
+      <!-- <br />
         <br />
         Interested in Web, Software, App, Game Development, Board Games, Guitar,
         Basketball, Football, Drawing -->
+    </p>
+
+    <div class="quote-container">
+      <p>
+        <i>
+          You cannot use the word "possibility" without limitations <br />
+          - Master Higuchi
+        </i>
       </p>
+    </div>
+  </main>
+  <!-- End of Home -->
 
-      <div class="quote-container">
-        <p>
-          <i>
-            You cannot use the word "possibility" without limitations <br />
-            - Master Higuchi
-          </i>
+  <!-- Start of Project -->
+  <div id="project">
+    <h2>PROJECTS</h2>
+
+    <div class="project-container">
+      <!-- Repo -->
+      <div class="repository-container">
+        <div class="repository-head">
+
+          <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer">
+            <h3>anicard</h3>
+          </a>
+          <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer"><img
+              src="./asset/svg/external-link.svg" alt="external-link" /></a>
+
+        </div>
+
+        <p class="repository-description">
+          Create simple cards with anime information and cover on it.
         </p>
-      </div>
-    </main>
-    <!-- End of Home -->
-
-    <!-- Start of Project -->
-    <div id="project">
-      <h2>PROJECTS</h2>
-
-      <div class="project-container">
-        <!-- Repo -->
-        <div class="repository-container">
-          <div class="repository-head">
-            
-            <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer"><h3>anicard</h3></a>
-            <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer"><img src="./asset/svg/external-link.svg" alt="external-link" /></a>
-            
-          </div>
-
-          <p class="repository-description">
-            Create simple cards with anime information and cover on it. 
-          </p>
-          <div class="repository-language-used-container">
-            <span class="language-used">Javascript</span>
-            <span class="language-used">CSS</span>
-            <span class="language-used">HTML</span>
-          </div>
-        </div>
-
-        <!-- Repo -->
-        <div class="repository-container">
-          <div class="repository-head">
-
-            <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer"><h3>catnapping</h3></a>
-            <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer"><img src="./asset/svg/external-link.svg" alt="external-link" /></a>
-            
-          </div>
-
-          <p class="repository-description">
-            A website with cats
-          </p>
-          <div class="repository-language-used-container">
-            <span class="language-used">Svelte</span>
-            <span class="language-used">Tailwind</span>
-
-          </div>
-        </div>
-
-        <div class="repository-container more-repo" >
-          more at <a href="https://github.com/notshanxx?tab=repositories" target="_blank">GITHUB</a>
+        <div class="repository-language-used-container">
+          <span class="language-used">Javascript</span>
+          <span class="language-used">CSS</span>
+          <span class="language-used">HTML</span>
         </div>
       </div>
 
-      <!-- End of Project -->
-    <h1
-      id="fin"
-      style="
+      <!-- Repo -->
+      <div class="repository-container">
+        <div class="repository-head">
+
+          <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer">
+            <h3>catnapping</h3>
+          </a>
+          <a href="https://github.com/notshanxx/anicard" target="_blank" rel="noopener noreferrer"><img
+              src="./asset/svg/external-link.svg" alt="external-link" /></a>
+
+        </div>
+
+        <p class="repository-description">
+          A website with cats
+        </p>
+        <div class="repository-language-used-container">
+          <span class="language-used">Svelte</span>
+          <span class="language-used">Tailwind</span>
+
+        </div>
+      </div>
+
+      <div class="repository-container more-repo">
+        more at <a href="https://github.com/notshanxx?tab=repositories" target="_blank">GITHUB</a>
+      </div>
+    </div>
+
+    <!-- End of Project -->
+    <h1 id="fin" style="
         font-family: 'Work Sans', sans-serif;
         font-size: 20px;
         margin: 100vh 0 50vh 0;
-      "
-    >
+      ">
       <i>~ fin ~</i>
     </h1>
     <script type="module" src="./script/event-effect.js"></script>
-  </body>
+</body>
+
 </html>
