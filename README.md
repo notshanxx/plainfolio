@@ -2,28 +2,29 @@
 
 ## Table of Contents
 
-- [Prerequisites](#Prerequisites)
-- [How to use](#How-to-use)
-- [Configuring the template](#Configuring-the-Template)
-- [HTML Sections](#HTML-Sections)
-  - [Editing HOME Section](#Editing-HOME-Section)
-    - [Editing the Profile Picture](#Editing-the-Profile-Picture)
-    - [Editing the Social Medias](#Editing-the-Social-Medias)
-      - [Add more Social Media Icons](#Add-more-Social-Media-Icons)
-    - [Editing the Name](#Editing-the-Name)
-    - [Editing the Bio](#Editing-the-Bio)
-    - [Editing the Quote](#Editing-the=Quote)
-  - [Editing PROJECTS section](#Editing-PROJECTS-section)
-    - [PROJECT TEMPLATE](#PROJECT-TEMPLATE)
-  - [ABOUT SECTION](#ABOUT-SECTION)
-    - [Changing About Image](#Editing-about-image)
-    - [Editing Your About Name](#Editing-Your-About-Name)
-    - [Editing About Social Media](#Editing-About-Social-Media)
-    - [Editing Your About Long Bio](#Editing-Your-About-Long-Bio)
-    - [Editing Your Skills](#Editing-Your-Skills)
-- [Others](#Others)
-  - [Enable Scrolling](#Enable-Scrolling)
-  - [Remove Quote](#Enable-Scrolling)
+- [Prerequisites](#prerequisites)
+- [How to use](#how-to-use)
+- [Configuring the template](#honfiguring-the-template)
+- [HTML Sections](#html-sections)
+  - [Editing HOME Section](#editing-home-section)
+    - [Editing the Profile Picture](#editing-the-profile-picture)
+    - [Editing the Social Medias](#editing-the-social-medias)
+      - [Add more Social Media Icons](#add-more-social-media-icons)
+    - [Editing the Name](#editing-the-name)
+    - [Editing the Bio](#editing-the-bio)
+    - [Editing the Quote](#editing-the-quote)
+  - [Editing PROJECTS section](#editing-projects-section)
+    - [PROJECT TEMPLATE](#project-template)
+  - [ABOUT SECTION](#about-section)
+    - [Changing About Image](#editing-about-image)
+    - [Editing Your About Name](#editing-your-about-name)
+    - [Editing About Social Media](#editing-the-social-medias)
+    - [Editing Your About Long Bio](#editing-your-about-long-bio)
+    - [Editing Your Skills](#editing-your-skills)
+- [Others](#others)
+  - [Enable Scrolling](#enable-scrolling)
+  - [Remove Quote](#remove-quote)
+  - [Remove Hover Script](#remove-hover-script)
 
 Follow the folllowing instruction to get the project and run it locally to your computer
 
@@ -268,6 +269,7 @@ find these code in the `index.html`. change the `img src`
 -
 
 ##### Editing Your About Name
+
 find these code in the `index.html`. change the name inside
 
 ```html
@@ -296,10 +298,11 @@ find these code in the `index.html`. change the `img src` and the `hrefs` pointi
   </li>
 </ul>
 ```
+
 `may break design if added more than 3`
 
-
 ##### Editing Your About Long Bio
+
 find these code in the `index.html`. change the contents
 
 ```html
@@ -312,8 +315,8 @@ find these code in the `index.html`. change the contents
 ```
 
 ##### Editing Your Skills
-find these code in the `index.html`. change/add `<li><li/>` tags
 
+find these code in the `index.html`. change/add `<li><li/>` tags
 
 ```html
 <!-- Skills / Tools -->
