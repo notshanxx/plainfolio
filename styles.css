@@ -1,18 +1,19 @@
 :root {
   --bg-color: #070a2d;
   --font-color: #cdced5;
-  --headline-color: #ffffff;
+  --link-color: lightblue;
+  --text-color-1: rgba(0, 179, 119, 1);
+  --text-color-2: rgba(214, 255, 127, 1);
+  --headline-color: white;
 }
 html {
   scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
-
 
 body {
   min-height: 100vh;
@@ -20,42 +21,38 @@ body {
   text-align: center;
   font-family: "Work Sans", sans-serif;
   /* remove scroll bar and disable scroll */
-  overflow: hidden;
+  /* overflow: hidden; */
   color: var(--font-color);
 }
-
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
+}
+h1 {
   font-size: 36px;
   color: var(--headline-color);
   animation: fadeInLeft 1s ease;
 }
 h2 {
-  color: var(--headline-color);
+  color: var(--font-color);
   font-weight: 900;
 }
 h3 {
-  font-family: "Montserrat", sans-serif;
+  color: var(--text-color-1);
 }
-
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
 p {
   color: var(--font-color);
-  font-size: 0.8rem;
+  font-size: 14px;
   line-height: 1.1rem;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
+ul {
+  list-style: none;
+}
 
 /* NAVIGATION */
 nav {
@@ -66,12 +63,10 @@ nav {
   backdrop-filter: blur(5px);
   z-index: 6;
   width: 100%;
-
 }
 nav ul {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  list-style: none;
   justify-content: center;
   margin: 0 1rem;
 }
@@ -82,7 +77,6 @@ nav li a {
   display: block;
   text-align: center;
   padding: 1rem;
-  text-decoration: none;
   font-size: 13px;
   color: #fff;
 }
@@ -91,35 +85,15 @@ nav ul li:nth-child(1) {
   margin-right: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HOME */
 
 /* edit this to center the contents */
 main {
-  margin: 30vh 15vw 20vh 15vw;
+  padding: 0 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .img-info-container {
@@ -158,8 +132,7 @@ main {
   right: -20px;
   opacity: 0;
   display: flex;
-  justify-content: end;
-  gap: 3px;
+  gap: 5px;
   animation: fadeInUp 1s ease forwards 0.5s;
   background-color: var(--bg-color);
 }
@@ -194,11 +167,9 @@ main hr {
   padding: 16px;
   background-color: #838596;
   opacity: 0;
-
   border-radius: 3px;
   filter: drop-shadow(0 0 0 rgba(54, 54, 54, 0.2));
-
-  transition: .3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
   transform-origin: right;
   will-change: filter;
   animation: dropShadow 1s ease forwards 1.5s;
@@ -208,43 +179,24 @@ main hr {
 }
 
 .quote-container:hover {
-  padding: 18px;
-
   filter: drop-shadow(10px 10px 2px rgba(255, 255, 255, 0.25));
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Project Styles */
 
 #project {
-  min-height: 100vh;
-  margin: 0 10px;
-  padding-top: 15vh;
+  padding: 15vh 16px;
+}
+#project h2 {
+  font-size: xx-large;
+  text-align: left;
+  margin-left: 1rem;
 }
 .project-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 /* Per Repo Styles*/
@@ -257,16 +209,13 @@ main hr {
   gap: 8px;
   padding: 16px;
   border-radius: 5px;
-  width: 100%;
   background: #222431;
 }
 .repository-container h3 {
-  color: rgb(169 182 101);
-
+  text-align: left;
 }
 .repository-container img {
   vertical-align: bottom;
-
 }
 
 .repository-container p {
@@ -278,13 +227,13 @@ main hr {
   display: flex;
   flex-direction: row;
   gap: 3px;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
 /* Repo Description */
 .repository-description {
   text-align: left;
-} 
+}
 
 /* Repo Langauges */
 .repository-language-used-container {
@@ -293,59 +242,101 @@ main hr {
   font-weight: lighter;
   gap: 8px;
 }
-.language-used{
+.language-used {
   font-size: 12px;
-  color: #23DCDC;
+  color: #1bb6b6;
 }
-.more-repo{
+.more-repo {
+  margin-top: 10px;
   display: block;
 }
-.more-repo a{
+.more-repo a {
   font-weight: 800;
-  color: #23DCDC;
+  color: var(--link-color);
+}
+
+/* about */
+
+#about {
+  padding-top: 15vh;
+}
+.about-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about-img-container img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.about-social-container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1em;
+}
+#about p {
+  margin: 20px;
+}
+.about-social-container li {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  margin: 0 30px;
+}
+#about h3 {
+  text-align: left;
+  margin: 10px 20px;
+}
+.skill li {
+  line-height: 30px;
+}
+#about ul.skill li:before {
+  font-size: 10px;
+  padding-right: 10px;
+  content: "▸";
+  vertical-align: bottom;
+}
+
+footer {
+  padding: 10vh;
 }
 
 /* MEDIA QUERIES */
 
 /* FOR TABLET */
 @media screen and (min-width: 768px) {
-  /* add margin left and rigth make itcentered */
-  nav {
-    width: 40%;
-  }
+  /* add margin left and rigth make it centered */
   main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #about,
+  #project,
+  nav ul {
     margin-left: 30%;
     margin-right: 30%;
-  }
-
-  /* project style */
-  .project-container {
-
-    margin: 0 30%;
   }
 }
 /* FOR DESKTOP */
 @media screen and (min-width: 1025px) {
-  /* nav {
-    width: 40%;
-  }
-  main {
-    margin-left: 30%;
-    margin-right: 30%;
-  } */
-
   /* project style */
   .project-container {
     grid-template-columns: repeat(2, 1fr);
-
-    margin: 0 30%;
   }
-  .more-repo{
-    grid-area: 2 / 1 / 3 / 3;
+  .more-repo {
     display: block;
   }
-
-
+  .skill {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* KEYFRAMES */
@@ -387,3 +378,42 @@ main hr {
     scale: 1;
   }
 }
+
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+
+.gradient {
+  text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(
+    -35deg,
+    var(--text-color-1) 0%,
+    var(--text-color-2) 100%
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 10s ease-in-out infinite;
+}
+
+/* must have 1 inner div that wrap all content to work */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* .flex-end {
+  align-items: flex-end;
+  padding-bottom: 15vh;
+} */
