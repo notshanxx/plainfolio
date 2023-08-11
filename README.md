@@ -1,5 +1,17 @@
 # Plainfolio
 
+:flags: A plain portfolio template for everyone
+
+[Live Preview](https://plainfolio.vercel.app/)
+
+## Features
+
+:pushpin: Fast  
+:pushpin: Reponsive  
+:pushpin: One Page  
+:pushpin: Simple  
+:pushpin: Easy to Customize  
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
