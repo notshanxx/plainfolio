@@ -15,6 +15,7 @@
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
+- [Deploy](#deploy)
 - [How to use](#how-to-use)
 - [Configuring the template](#honfiguring-the-template)
 - [HTML Sections](#html-sections)
@@ -97,6 +98,11 @@ After running the `npm run dev`. You should see the following below
 ```
 
 Congratulation!!! You can now go to the url `http://localhost:5173/` and view the portfolio
+
+
+## Deploy
+
+To know how to deploy this and run it online. Follow this [documentation](https://vitejs.dev/guide/static-deploy.html) 
 
 ## Configuring the Template
 
