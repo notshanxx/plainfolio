@@ -4,20 +4,29 @@
 
 [Live Preview](https://plainfolio.vercel.app/)
 
+
+<p align="center">
+<img src="asset/portfolio.gif"/>
+</p>
+
+
 ## Features
 
 :pushpin: Fast  
-:pushpin: Reponsive  
-:pushpin: One Page  
 :pushpin: Simple  
+:pushpin: One Page  
+:pushpin: Reponsive  
+:pushpin: Begginer Friendly  
 :pushpin: Easy to Customize  
+
 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Deploy](#deploy)
 - [How to use](#how-to-use)
-- [Configuring the template](#honfiguring-the-template)
+- [Configuring the template](#configuring-the-template)
+- [Changing site color](#)
 - [HTML Sections](#html-sections)
   - [Editing HOME Section](#editing-home-section)
     - [Editing the Profile Picture](#editing-the-profile-picture)
@@ -34,10 +43,10 @@
     - [Editing About Social Media](#editing-the-social-medias)
     - [Editing Your About Long Bio](#editing-your-about-long-bio)
     - [Editing Your Skills](#editing-your-skills)
-- [Others](#others)
-  - [Enable Scrolling](#enable-scrolling)
-  - [Remove Quote](#remove-quote)
-  - [Remove Hover Script](#remove-hover-script)
+  - [Others](#others)
+     - [Enable Scrolling](#enable-scrolling)
+     - [Remove Quote](#remove-quote)
+     - [Remove Hover Script](#remove-hover-script)
 
 Follow the folllowing instruction to get the project and run it locally to your computer
 
@@ -107,7 +116,44 @@ To know how to deploy this and run it online. Follow this [documentation](https:
 ## Configuring the Template
 
 Now to change the default informations.
-Go to the `index.html` located at the root folder
+Go to the `index.html` located at the root folder and follow the following guide.
+
+### Changing Color
+
+Go to the `styles.css` located at the root folder and follow the following guide.
+
+In the first line you will see the `:root`
+
+change only the variable inside it.
+
+```css
+
+:root {
+  --bg-color: #070a2d;
+  --font-color: #cdced5;
+  --link-color: lightblue;
+  --text-color-1: rgba(0, 179, 119, 1); 
+  --text-color-2: rgba(214, 255, 127, 1);
+  --headline-color: white;
+}
+```
+
+
+  --bg-color  -the background
+
+  --font-color  -the font color
+
+  --link-color  -the link color
+
+  --text-color-1   -the green color in the site
+
+  --text-color-2  -the yellow collor in the site
+
+  --headline-color  -the h color
+
+
+
+
 
 ### HTML Sections
 
