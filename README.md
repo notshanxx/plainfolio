@@ -26,7 +26,7 @@
 - [Deploy](#deploy)
 - [How to use](#how-to-use)
 - [Configuring the template](#configuring-the-template)
-- [Changing site color](#)
+- [Changing site color](#changing-color)
 - [HTML Sections](#html-sections)
   - [Editing HOME Section](#editing-home-section)
     - [Editing the Profile Picture](#editing-the-profile-picture)
