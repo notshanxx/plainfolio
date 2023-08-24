@@ -4,11 +4,11 @@
 
 [Live Preview](https://plainfolio.vercel.app/)
 
-
+<!--
 <p align="center">
 <img src="asset/portfolio.gif"/>
 </p>
-
+-->
 
 ## Features
 
